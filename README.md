@@ -128,6 +128,7 @@ To access authenticated endpoints, you'll need an API key.
 - **Best For**: Testing API authentication with custom headers
 - **Headers**:
   - `X-Api-Key`: Your API key from https://api-ninjas.com/
+- **Note**: Best for auto refresh
 
 ---
 
