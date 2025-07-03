@@ -105,9 +105,9 @@ npm run dev
 
 ```json
 {
-  "url": "https://reqres.in/api/users",
+  "url": "https://api.api-ninjas.com/v1/quotes",
   "headers": [
-    {"key": "x-api-key", "value": "reqres-free-v1"}
+    {"key": "X-Api-Key", "value": "your-api-key"}
   ]
 }
 ```
@@ -115,7 +115,7 @@ npm run dev
 - **Returns**: Authenticated user data  
 - **Best For**: Testing API authentication  
 - **Headers**:
-  - `x-api-key`: reqres-free-v1
+  - `X-Api-Key`: https://api-ninjas.com/
 
 ---
 
