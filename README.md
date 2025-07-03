@@ -2,9 +2,6 @@
 
 A dynamic, React-based data table widget that allows users to connect to any REST API endpoint, fetch and display data with pagination, auto-refresh, and nested data handling support.
 
-![Demo Screenshot](https://demo-screenshot.png)
-
----
 
 ## 🚀 Overview
 
@@ -35,13 +32,13 @@ The **REST API Data Table Widget** enables users to:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/api-data-table-widget.git
+git clone https://github.com/Aloseous/DataTableWidget.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd api-data-table-widget
+cd dataTableWidget
 ```
 
 Install dependencies:
@@ -131,11 +128,3 @@ npm run dev
 | Parameters        | URL query parameters              | None                                          |
 | Refresh Interval  | Auto-refresh frequency (seconds)  | Off (manual refresh only)                    |
 
-
----
-
-## 🙌 Acknowledgements
-
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com)
-- [DummyJSON](https://dummyjson.com)
-- [Reqres](https://reqres.in)
