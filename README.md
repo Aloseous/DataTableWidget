@@ -103,19 +103,31 @@ npm run dev
 
 ### 3. Authentication Example
 
+To access authenticated endpoints, you'll need an API key.
+
+#### 🔑 How to Get an API Key
+
+1. Go to [api-ninjas.com](https://api-ninjas.com/)
+2. Sign up for a free account
+3. Once logged in, navigate to the **API Dashboard**
+4. Copy your **X-Api-Key**
+
+#### 🧪 Sample Configuration
+
 ```json
 {
   "url": "https://api.api-ninjas.com/v1/quotes",
   "headers": [
-    {"key": "X-Api-Key", "value": "your-api-key"}
+    { "key": "X-Api-Key", "value": "your-api-key" }
   ]
 }
+
 ```
 
-- **Returns**: Authenticated user data  
-- **Best For**: Testing API authentication  
+- **Returns**: A random quote (authenticated)  
+- **Best For**: Testing API authentication with custom headers
 - **Headers**:
-  - `X-Api-Key`: https://api-ninjas.com/
+  - `X-Api-Key`: Your API key from https://api-ninjas.com/
 
 ---
 
