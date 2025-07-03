@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Table, Button, Spin, Alert, Card, Space, Badge, Typography, Select, Divider, Tag } from 'antd';
+import { useState, useEffect, useMemo } from 'react';
+import { Table, Button, Spin, Alert, Card, Space, Badge, Typography, Select } from 'antd';
 import {
   SettingOutlined,
   SyncOutlined,
@@ -14,7 +14,7 @@ import { generateColumns } from './tableConfig';
 const { Title, Text } = Typography;
 
 const DataTableWidget = () => {
-  const [pagination, setPagination] = useState({ current: 1, pageSize: 10 });
+  const [pagination, setPagination] = useState({ current: 1, pageSize: 5 });
   const [apiConfig, setApiConfig] = useState(() => {
     const savedConfig = localStorage.getItem('apiConfig');
     return savedConfig
@@ -205,10 +205,6 @@ const DataTableWidget = () => {
         onSubmit={handleConfigSubmit}
         initialValues={apiConfig}
       />
-
-      <div style={{ textAlign: 'center', marginTop: 24, color: '#888', padding: '16px' }}>
-        <Text>REST API Data Table Widget • {new Date().getFullYear()}</Text>
-      </div>
     </div>
   );
 };

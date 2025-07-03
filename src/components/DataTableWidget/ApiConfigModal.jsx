@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Modal, Form, Input, Button, Card, Space, Alert, Select } from 'antd';
+import { useState, useEffect } from 'react';
+import { Modal, Form, Input, Button, Card, Space, Alert } from 'antd';
 import { SettingOutlined, DeleteOutlined, PlusOutlined } from '@ant-design/icons';
 
 const ApiConfigModal = ({ visible, onCancel, onSubmit, initialValues }) => {
@@ -102,10 +102,10 @@ const ApiConfigModal = ({ visible, onCancel, onSubmit, initialValues }) => {
               <>
                 {fields.map(({ key, name, ...restField }) => (
                   <Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline">
-                    <Form.Item {...restField} name={[name, 'key']} style={{ width: '45%' }}>
+                    <Form.Item {...restField} name={[name, 'key']}>
                       <Input placeholder="Key (e.g., Authorization)" />
                     </Form.Item>
-                    <Form.Item {...restField} name={[name, 'value']} style={{ width: '45%' }}>
+                    <Form.Item {...restField} name={[name, 'value']}>
                       <Input placeholder="Value" />
                     </Form.Item>
                     <Button danger icon={<DeleteOutlined />} onClick={() => remove(name)} />
@@ -125,10 +125,10 @@ const ApiConfigModal = ({ visible, onCancel, onSubmit, initialValues }) => {
               <>
                 {fields.map(({ key, name, ...restField }) => (
                   <Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline">
-                    <Form.Item {...restField} name={[name, 'key']} style={{ width: '45%' }}>
+                    <Form.Item {...restField} name={[name, 'key']}>
                       <Input placeholder="Key" />
                     </Form.Item>
-                    <Form.Item {...restField} name={[name, 'value']} style={{ width: '45%' }}>
+                    <Form.Item {...restField} name={[name, 'value']}>
                       <Input placeholder="Value" />
                     </Form.Item>
                     <Button danger icon={<DeleteOutlined />} onClick={() => remove(name)} />

@@ -1,7 +1,6 @@
-import React from 'react';
 import { Typography, Tag } from 'antd';
 
-const { Text } = Typography; // Correct Text import
+const { Text } = Typography;
 
 const NestedDataRenderer = ({ value }) => {
   if (value === null || value === undefined) {
@@ -41,7 +40,10 @@ const NestedDataRenderer = ({ value }) => {
 
   // Special types
   if (typeof value === 'string' && value.startsWith('http')) {
-    return (
+    const isImage = /\.(jpeg|jpg|gif|png|webp|svg)$/.test(value.toLowerCase());
+    return isImage ? (
+      <img src={value} alt="resource" style={{ maxWidth: 100, maxHeight: 100, borderRadius: 4 }} />
+    ) : (
       <a href={value} target="_blank" rel="noopener noreferrer">
         {value}
       </a>
