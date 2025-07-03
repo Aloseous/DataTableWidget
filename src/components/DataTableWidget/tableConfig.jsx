@@ -1,7 +1,6 @@
 import { Tooltip } from 'antd';
 import ExpandableCell from './renderers/ExpandableCell';
 
-// Pure JS helper functions
 const formatHeader = key => {
   return key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
